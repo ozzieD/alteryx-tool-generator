@@ -12,8 +12,9 @@ exports.createDirectory = (result) => new Promise((resolve, reject) => {
   fs.mkdir(toolDirectory, (err) => {
     if (err) {
       reject(console.error(err))
+      process.exit(1)
     }
-    console.log(`\n${folderName} folder has been created`)
+    console.log(`\n${folderName} folder has been created.`)
     const inputResult = result
     inputResult.ToolDirectory = toolDirectory
 
