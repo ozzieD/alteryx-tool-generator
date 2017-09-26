@@ -3,39 +3,43 @@ Alteryx Tool Generator
 
 Overview
 ---
-Generator that scaffolds a custom Alteryx Designer tool with the HTML SDK and the choice of engine between JavaScript or Alteryx macro.
+The Alteryx Tool Generator scaffolds a custom Alteryx Designer tool using the HTML GUI SDK and either the Javascript or Alteryx macro engine.
 
-Running the main Node script will prompt questions, and then write files needed to scaffold.
+To use, run the main Node script and answer the prompts to write the needed files.
 
 Features
 ---
-* Answer a set of questions and generate files for the scaffold
-* Generated tool can immediately be viewed in Alteryx Designer
+* __Program__: Tool generation script
+* __Output__: Alteryx Designer compatible tool
 
 Getting Started
 ---
-* __Install__:
-   1. clone this repo: [alteryx/alteryx-tool-generator](https://github.com/alteryx/alteryx-tool-generator.git)
-   2. `npm install` in directory with *package.json*
-* __Run__: `node alteryx-tool-generator.js` to scaffold your tool
-* __Tool Directory__: the written files are saved in *C:\Users\\{username}\AppData\Roaming\Alteryx\Tools*
+- Install the generator using the command line
+   1. Clone or download the tool generator repository: [alteryx/alteryx-tool-generator](https://github.com/alteryx/alteryx-tool-generator.git)
+   2. Navigate to the directory housing *package.json*
+   3. Use `npm install`
+- Run the generator
+   1. Use `node alteryx-tool-generator.js` to create your new tool
+- Access the written tool files
+   1. Navigate to the tool directory: *C:\Users\\%USERNAME%\AppData\Roaming\Alteryx\Tools*
 
 Docs
 ---
-* **Link to Alteryx documentation on HTML SDK**
+* [The Alteryx HTML GUI SDK help page](https://help.alteryx.com/developer/current/index.htm#HTML/Overview.htm)
+* [Engine Works Blog Post](https://community.alteryx.com/t5/Engine-Works-Blog/Alteryx-Tool-Generator/ba-p/75216)
 
 Version Support
 ---
 
 |Technology|Version|
 |----------|------:|
-|[Alteryx](http://downloads.alteryx.com/)   |   11.3|
+|[Alteryx](http://downloads.alteryx.com/)   |   11.5|
 |[node](https://nodejs.org/en/download/)      |  6.9.1|
 |[npm](https://nodejs.org/en/download/)       | 3.10.8|
 
 Contribute
 ---
-* Contributions, questions, and comments are all welcome and encouraged. For code contributions, please submit a pull request. Website related issues should be filed on the [Alteryx Tool Generator](https://github.com/alteryx/alteryx-tool-generator/issues/new) issue tracker.
+ Contributions, questions, and comments are welcome and encouraged. To contribute code, submit a pull request. To report website-related issues, file a report using the Alteryx Tool Generator [issue tracker](https://github.com/alteryx/alteryx-tool-generator/issues/new).
 
 License
 ---
